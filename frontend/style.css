@@ -1,0 +1,56 @@
+/* Reset and basic styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+  padding: 10px;
+}
+
+header, footer {
+  background: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.user-grid {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Responsive grid */
+@media (min-width: 600px) {
+  .user-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .user-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.user-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.user-card h2 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
